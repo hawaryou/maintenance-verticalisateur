@@ -54,7 +54,7 @@ const clientSignatureHint=document.getElementById('clientSignatureHint');
 function updateBatchUI(){
  document.body.classList.toggle('batch-active',batchMode);
  const bsBottom=document.getElementById('batchSaveBottom');if(bsBottom)bsBottom.disabled=!batchMode||batchFinalized;
- const bfBottom=document.getElementById('batchFinishBottom');if(bfBottom)bfBottom.disabled=!batchMode||batchFinalized||batchRecords.length===0;
+ const bfBottom=document.getElementById('batchFinishBottom');if(bfBottom)bfBottom.disabled=!batchMode||batchFinalized;
   const n=batchRecords.length;
   const pdfButton=document.getElementById('pdf');
   const sendButton=document.getElementById('send');
